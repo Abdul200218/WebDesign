@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Venue Booking System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Venue Booking System</h1>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <form id="bookingForm">
+      <label for="venue">Select a Venue:</label>
+      <select id="venue" name="venue">
+        <option value="venue1">CHM Venue</option>
+        <option value="venue2">Project Lab Venue</option>
+        <option value="venue3">Main Hall Venue</option>
+      </select>
+
+      <label for="date">Select a Date:</label>
+      <input type="date" id="date" name="date">
+        
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+        
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+      <label for="eventDetails">Event Details:</label>
+      <textarea id="eventDetails" name="eventDetails" placeholder="Enter event details"></textarea>
+        
+      <button type="submit">Check Availability</button>
+    </form>
+
+    <div id="availability"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
